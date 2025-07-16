@@ -1,7 +1,11 @@
 from flask import Flask, render_template, request
 
-
 app= Flask(__name__)
+
+import gdown
+
+url = https://drive.google.com/file/d/1KOa-DYaLphPMb3fYEFF81NoWx82h5Aqa/view?usp=drive_link
+gdown.download(url, "imdb.csv", quiet=False)
 
 import pandas as pd
 import string
