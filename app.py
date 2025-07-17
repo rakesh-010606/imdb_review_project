@@ -10,7 +10,7 @@ gdown.download(url, "imdb.csv", quiet=False)
 import pandas as pd
 import string
 
-df=pd.read_csv("imdb.csv")
+df=pd.read_csv("imdb.csv",header=0)
 
 # reshuffling
 df=df.sample(frac=1).reset_index(drop=True)
